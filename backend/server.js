@@ -1,13 +1,22 @@
 const express = require('express');
 const server = express();
-const dotenv = require('dotenv');
+require('dotenv').config();
 
-dotenv.config();
+
+
+
+console.log("FRONTEND_ORIGIN:", process.env.FRONTEND_ORIGIN);
+
+
+
+
+
+
 const cors = require('cors');
 server.use(cors({
 
-origin: process.env.FRONTEND_ORIGIN,
-credentials:true
+    origin: process.env.FRONTEND_ORIGIN,
+    credentials: true
 
 }));
 
@@ -50,7 +59,10 @@ user:process.env.PG_USER,
 host:process.env.PG_HOST,
 database:process.env.PG_DATABASE,
 password:process.env.PG_PASSWORD,
-port:process.env.PG_PORT
+port:process.env.PG_PORT,
+ssl: {
+    rejectUnauthorized: false // for RDS without client certs
+  }
 
 
 })
@@ -166,7 +178,7 @@ server.post("/sendPdf",upload.array("pdf"),async(req,res)=>{
     const association_id = req.body.association_id;
 
     const files = req.files;
-    console.log(files);
+    //console.log(files);
     
 
     // create array of objexts with file compute content
@@ -385,9 +397,10 @@ console.log("done")
 
 
 
+const port = process.env.PORT || 3000;
 
 
-server.listen(3000,(req,res)=>{
+server.listen(port,()=>{
 
 
 

@@ -1,10 +1,9 @@
 Amatle.com
 Amatle.com is a web app that answers user questions about Homeowners Association (HOA) rules.
-
-This project was built as a way to learn and experiment with Retrieval-Augmented Generation (RAG) using LangChain, OpenAI, and pgvector. Users can choose from three HOA documents and ask questions in a chat-style interface — for example, “How many dogs can I have?”
+It was built as a personal project to learn Retrieval-Augmented Generation (RAG) using LangChain, OpenAI, and pgvector.
+Users can choose from one of three HOA documents and ask questions like “How many dogs can I have?”
 
 Live Site: https://amatle.com
-(Add your real link if hosted)
 
 Features
 🏡 Select from 3 HOA documents
@@ -91,4 +90,5 @@ Select one of the HOA documents
 
 Ask a question like “How many pets can I have?”
 
-The app responds based on that document
+The app responds based on the selected document
+

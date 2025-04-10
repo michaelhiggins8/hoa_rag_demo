@@ -1,96 +1,101 @@
 Amatle.com
-Amatle.com is a web app that answers user questions about Homeowners Association (HOA) rules. It’s built as a personal learning project to explore Retrieval-Augmented Generation (RAG) architecture using OpenAI and LangChain. Users can select one of three HOA documents and interact in a chat-like interface to find relevant information, such as “How many dogs can I have?”.
+Amatle.com is a web app that answers user questions about Homeowners Association (HOA) rules.
+
+This project was built as a way to learn and experiment with Retrieval-Augmented Generation (RAG) using LangChain, OpenAI, and pgvector. Users can choose from three HOA documents and ask questions in a simple, chat-like interface — for example, “How many dogs can I have?”
 
 Features
-Multiple HOA documents: Choose from three built-in HOA documents.
+🏡 Select from 3 HOA documents
 
-Chat-style interface: Ask questions in a familiar conversational UI.
+💬 Chat-style interface (similar to ChatGPT)
 
-RAG-based answers: Uses OpenAI and LangChain to retrieve relevant text from HOA docs.
+🔍 Ask natural-language questions
 
-Learning project: Built to practice RAG architecture, vector databases, and Node.js/React.
+🤖 Answers generated using OpenAI + LangChain
+
+🧪 Built as a personal learning project
 
 Tech Stack
-Frontend: React (with Vite, React Router)
+Frontend
 
-Backend: Node.js, Express, LangChain, OpenAI, Multer, pdf-parse
+React
 
-Database: PostgreSQL with pgvector
+Vite
 
-Other Tools: dotenv, cors, morgan
+React Router DOM
 
+Backend
+
+Node.js
+
+Express
+
+LangChain
+
+OpenAI
+
+PostgreSQL + pgvector
+
+Other
+
+Multer (file handling)
+
+pdf-parse (PDF reader)
+
+dotenv
+
+cors
+
+morgan
+
+Project Structure
+bash
+Copy
+Edit
+/frontend   → React client (Vite)
+/backend    → Node.js + Express server
 Getting Started
-Prerequisites
-Node.js installed on your machine.
-
-PostgreSQL (for the database).
-
-A .env file for backend configuration (details below).
-
-Installation & Setup
 1. Clone the Repository
 bash
 Copy
 Edit
-git clone https://github.com/<YourUsername>/amatle.com.git
+git clone https://github.com/yourusername/amatle.com.git
 cd amatle.com
-2. Backend Setup
-Navigate to the backend folder:
+2. Setup Frontend
+bash
+Copy
+Edit
+cd frontend
+npm install
+npm run dev
+Runs on: http://localhost:5173
 
+3. Setup Backend
 bash
 Copy
 Edit
 cd backend
-Install dependencies:
-
-bash
-Copy
-Edit
 npm install
-Create a .env file (in the backend folder) with values for:
-
-bash
-Copy
-Edit
-FRONTEND_ORIGIN=http://localhost:5173  # or wherever your frontend is running
-PG_USER=your_postgres_user
-PG_HOST=localhost
-PG_DATABASE=your_database_name
-PG_PASSWORD=your_db_password
-PG_PORT=5432
-OPENAI_API_KEY=your_openai_api_key
-Start the server:
-
-bash
-Copy
-Edit
 node server.js
-The backend should now be running (by default on port 3000, if coded that way).
+Environment Variables (Backend)
+Create a .env file inside the backend folder:
 
-3. Frontend Setup
-Open a new terminal in the root folder, then go to the frontend folder:
-
-bash
+env
 Copy
 Edit
-cd ../frontend
-Install dependencies:
+FRONTEND_ORIGIN=http://localhost:5173
 
-bash
-Copy
-Edit
-npm install
-Start the development server:
+PG_USER=your_user
+PG_HOST=localhost
+PG_DATABASE=your_database
+PG_PASSWORD=your_password
+PG_PORT=5432
 
-bash
-Copy
-Edit
-npm run dev
-Open your browser and visit the URL printed in the console (commonly http://localhost:5173).
-
+OPENAI_API_KEY=your_openai_key
 Usage
-Pick an HOA document: You’ll see an option to select one of three available HOA documents.
+Open the homepage
 
-Ask questions: You’ll be taken to a chat-style interface where you can type your question (e.g., “How many dogs can I have?”).
+Choose one of the HOA documents
 
-Receive answers: The app uses RAG (Retrieval-Augmented Generation) to look up relevant text in the chosen HOA doc and provide a concise answer.
+Type your question (e.g., “Can I build a fence?”)
+
+The app responds based on that document

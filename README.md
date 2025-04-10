@@ -94,24 +94,3 @@ Pick an HOA document: You’ll see an option to select one of three available HO
 Ask questions: You’ll be taken to a chat-style interface where you can type your question (e.g., “How many dogs can I have?”).
 
 Receive answers: The app uses RAG (Retrieval-Augmented Generation) to look up relevant text in the chosen HOA doc and provide a concise answer.
-
-License
-This project is licensed under the MIT License. Feel free to use, modify, and distribute this code; just provide attribution back to this repository.
-
-Adding the MIT License File
-To include the full text of the MIT license in your repo:
-
-Create a new file named LICENSE (no extension) at the root of your repository.
-
-Copy and paste the official MIT license text from choosealicense.com.
-
-Example content for LICENSE:
-
-text
-Copy
-Edit
-MIT License
-
-Copyright (c) 2025 <Your Name>
-
-Permission is hereby granted, free of charge, to any person obtaining a copy...

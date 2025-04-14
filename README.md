@@ -6,7 +6,7 @@ This project was built to learn and experiment with Retrieval-Augmented Generati
 Users can choose from three HOA documents and ask questions like “How many dogs can I have?”
 
 Live Site: [https://amatle.com](https://amatle.com)  
-Hosted on (add your host, e.g. AWS)
+Hosted on AWS
 
 ---
 

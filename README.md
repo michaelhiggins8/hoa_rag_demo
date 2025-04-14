@@ -56,11 +56,13 @@ Hosted on (add your host, e.g. AWS)
 ```bash
 git clone https://github.com/yourusername/amatle.com.git
 cd amatle.com
+```
 
+---
 
-![choose_rules](https://github.com/user-attachments/assets/00b6c23a-8a6e-41ce-b832-72f45a26b4a0)
-![enter_querry](https://github.com/user-attachments/assets/4f046ae7-ac6b-4a08-b352-05d91fede5b4)
-![querry_1](https://github.com/user-attachments/assets/1033acec-4b38-4988-8dd7-8d897a2b73d9)
+## Screenshots
+
+![choose_rules](https://github.com/user-attachments/assets/00b6c23a-8a6e-41ce-b832-72f45a26b4a0)  
+![enter_querry](https://github.com/user-attachments/assets/4f046ae7-ac6b-4a08-b352-05d91fede5b4)  
+![querry_1](https://github.com/user-attachments/assets/1033acec-4b38-4988-8dd7-8d897a2b73d9)  
 ![querry_2](https://github.com/user-attachments/assets/978091d4-5c5f-4431-94df-a94244f95eb9)
-
-
